@@ -2,14 +2,14 @@
   <div class="banner">Banner</div>
   <nav class="top-nav">
     <ul class="navigation">
-      <li><%= fa_icon "play" %><span class="nav-label">Play and Chat</span></li>
-      <li class="mobile"><%= fa_icon "music" %></li>
-      <li><%= fa_icon "search" %><span class="nav-label">Search</span></li>
+      <li class="play-tab-nav"><%= fa_icon "play" %><span class="nav-label">Play and Chat</span></li>
+      <li class="mobile track-tab-nav"><%= fa_icon "music" %></li>
+      <li class="search-tab-nav"><%= fa_icon "search" %><span class="nav-label">Search</span></li>
     </ul>
   </nav>
 </header>
 <article class="play-tab">
-<h1>Plays Tab</h1>
+  <h1>Plays Tab</h1>
 
 <div class="chat-box"></div>
 
@@ -24,8 +24,8 @@
 
 <footer>
   <ul class="footer-nav">
-    <li>Settings</li>
-    <li>User</li>
+    <li class="setting-tab-nav"><%= fa_icon "cog" %></li>
+    <li class="user-tab-nav"><%= fa_icon "user"%> 0</li>
   </ul>
 </footer>
 

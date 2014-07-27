@@ -22,12 +22,10 @@ header {display: flex;
 }
 
 .top-nav{
-  background-color: orange;
+  background-color: darkslateblue;
   @include span(12 of 12);
   order: 1;
-  ul li{
-    display: inline-block;
-  }
+  overflow: hidden;
   @include breakpoint($basic){
     @include span(12 of 12);
   }
@@ -35,7 +33,7 @@ header {display: flex;
 
 .play-tab{
   @include span(12 of 12);
-  background-color: yellow;
+  background-color: blue;
   @include breakpoint($basic){
     @include span(7 of 12);
   }
@@ -87,10 +85,7 @@ footer{
   @include span(12 of 12);
   position: fixed;
   bottom: 0px;
-  background-color: pink;
-  ul li{
-    display: inline-block;
-  }
+  background-color: darkslateblue;
   @include breakpoint($basic){
     position: static;
   }
@@ -103,12 +98,58 @@ footer{
 
 .nav-label {
   margin: 10px;
-}
-
-ul li.mobile{
+  display: none;
   @include breakpoint($basic){
-    display: none;
+    display: initial;
   }
 }
+
+.navigation {
+  display: table;
+  width: 100%;
+  padding-left: 0px;
+  @include breakpoint($basic){
+    width: initial;
+  }
+}
+
+.top-nav ul li.mobile{
+  @include breakpoint($basic){
+    display: none !important;
+  }
+}
+
+ul li i{
+  @include breakpoint($basic){
+    font-size: initial;
+    margin-left: 10px;
+  }
+}
+
+ul li{
+  display: table-cell !important;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+  @include breakpoint($basic){
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+input{
+  font-size: 16px;
+}
+
+
+.footer-nav {
+  display: table;
+  width: 100%;
+  padding-left: 25px;
+}
+
 
 
