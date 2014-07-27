@@ -31,6 +31,7 @@ gem 'sass-rails', :github => "rails/sass-rails"
 gem 'compass-rails'
 gem 'breakpoint', '~> 2.4.2'
 gem 'susy'
+gem 'font-awesome-rails'
 
 
 # Use ActiveModel has_secure_password

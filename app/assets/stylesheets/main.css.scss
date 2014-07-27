@@ -1,8 +1,9 @@
 @import "susy";
 @import "breakpoint";
+@import "font-awesome";
 
 $susy: (
-  columns: 12
+columns: 12
 );
 
 $pair: 0px 300px;
@@ -20,7 +21,7 @@ header {display: flex;
   }
 }
 
-.top_nav{
+.top-nav{
   background-color: orange;
   @include span(12 of 12);
   order: 1;
@@ -32,7 +33,7 @@ header {display: flex;
   }
 }
 
-.play_tab{
+.play-tab{
   @include span(12 of 12);
   background-color: yellow;
   @include breakpoint($basic){
@@ -40,7 +41,7 @@ header {display: flex;
   }
 }
 
-.track_tab{
+.track-tab{
 
   display: none;
   @include span(12 of 12);
@@ -51,7 +52,7 @@ header {display: flex;
   }
 
 }
-.search_tab{
+.search-tab{
   display: none;
   @include span(12 of 12);
   background-color: grey;
@@ -60,7 +61,7 @@ header {display: flex;
   }
 }
 
-.setting_tab{
+.setting-tab{
   display: none;
   @include span(12 of 12);
   background-color: orange;
@@ -69,7 +70,7 @@ header {display: flex;
   }
 }
 
-.user_tab{
+.user-tab{
   display: none;
   @include span(12 of 12);
   background-color: magenta;
@@ -96,10 +97,18 @@ footer{
 }
 
 
-.chat_controls {
-  margin: 10px
+.chat-controls {
+  margin: 10px;
 }
 
+.nav-label {
+  margin: 10px;
+}
 
+ul li.mobile{
+  @include breakpoint($basic){
+    display: none;
+  }
+}
 
 
