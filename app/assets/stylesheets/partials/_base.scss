@@ -1,0 +1,49 @@
+// Mixins
+@import "bourbon";
+@import "susy";
+@import "breakpoint";
+@import "font-awesome";
+
+// Typography
+$sans-serif: $helvetica;
+$serif: $georgia;
+$base-font-family: $sans-serif;
+$header-font-family: $base-font-family;
+
+// Colours
+$primary-color: #850EFF;
+$primary-color-light: #AC5BFF;
+$primary-color-dark: #562D7F;
+$secondary-color: #FFA723;
+$accent-color: #01B23A;
+$base-background-color: white;
+$dark-gray: #333;
+$light-gray: #DDD;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$base-accent-color: $accent-color;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Border color
+$base-border-color: $light-gray;
+
+// Sizes
+$base-font-size: 1em;
+$base-line-height: $base-font-size * 1.5;
+$unitless-line-height: $base-line-height / ($base-line-height * 0 + 1);
+$header-line-height: $base-font-size * 1.25;
+$base-border-radius: em(3);
+
+
+// Susy Grid
+$susy: ( columns: 12 );
+$pair: 0px 300px;
+$basic: 700px;
+
+@import "modules/all";

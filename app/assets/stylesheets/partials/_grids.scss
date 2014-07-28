@@ -1,0 +1,151 @@
+header {
+  display: flex;
+  flex-direction: column;
+  @include span(12 of 12);
+}
+
+html {
+  background-color: $primary-color-dark;
+}
+
+.banner {
+  @include span(12 of 12);
+  background-color: $secondary-color;
+  order: 2;
+  @include breakpoint($basic) {
+    order: 1;
+  }
+}
+
+.top-nav {
+  background-color: $primary-color;
+  @include span(12 of 12);
+  order: 1;
+  overflow: hidden;
+  @include breakpoint($basic){
+    @include span(12 of 12);
+  }
+}
+
+.play-tab{
+  @include span(12 of 12);
+  background-color: #fff;
+  @include breakpoint($basic){
+    @include span(7 of 12);
+  }
+}
+
+.track-tab{
+
+  display: none;
+  @include span(12 of 12);
+  background-color: $primary-color-light;
+  @include breakpoint($basic){
+    display: inline-block;
+    @include span(4 of 12);
+  }
+
+}
+.search-tab{
+  display: none;
+  @include span(12 of 12);
+  background-color: $primary-color-light;
+  @include breakpoint($basic){
+    display: inline-block;
+  }
+}
+
+.setting-tab{
+  display: none;
+  @include span(12 of 12);
+  background-color: orange;
+  @include breakpoint($basic){
+    display: inline-block;
+  }
+}
+
+.user-tab{
+  display: none;
+  @include span(12 of 12);
+  background-color: magenta;
+  @include breakpoint($basic){
+    display: none;
+  }
+}
+body {
+  @include container;
+  margin: 0px;
+}
+
+footer{
+  @include span(12 of 12);
+  position: fixed;
+  bottom: 0px;
+  background-color: $primary-color;
+  @include breakpoint($basic){
+    position: static;
+  }
+}
+
+
+.chat-controls {
+  margin: 10px;
+}
+
+.nav-label {
+  margin: 10px;
+  display: none;
+  @include breakpoint($basic){
+    display: initial;
+  }
+}
+
+.navigation {
+  display: table;
+  width: 100%;
+  padding-left: 0px;
+  @include breakpoint($basic){
+    width: initial;
+  }
+}
+
+.top-nav ul li.mobile{
+  @include breakpoint($basic){
+    display: none !important;
+  }
+}
+
+ul li i{
+  @include breakpoint($basic){
+    font-size: initial;
+    margin-left: 10px;
+  }
+}
+
+ul li{
+  display: table-cell !important;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+  @include breakpoint($basic){
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+
+input{
+  font-size: 16px;
+}
+
+
+.footer-nav {
+  display: table;
+  width: 100%;
+  padding-left: 25px;
+}
+
+
+
