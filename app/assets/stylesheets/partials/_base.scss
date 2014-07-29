@@ -14,8 +14,8 @@ $header-font-family: $base-font-family;
 $primary-color: #850EFF;
 $primary-color-light: #AC5BFF;
 $primary-color-dark: #562D7F;
-$secondary-color: #FFA723;
-$accent-color: #01B23A;
+$secondary-color: #01B23A;
+$accent-color: lighten(#FFA723, 5);
 $base-background-color: white;
 $dark-gray: #333;
 $light-gray: #DDD;
@@ -26,7 +26,7 @@ $base-accent-color: $accent-color;
 
 // Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: lighten($base-accent-color, 50);
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
@@ -39,7 +39,6 @@ $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1);
 $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
-
 
 // Susy Grid
 $susy: ( columns: 12 );
