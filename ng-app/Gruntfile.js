@@ -1,4 +1,4 @@
-// Generated on 2014-07-30 using generator-angular 0.9.5
+// Generated on 2014-08-05 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
   // Configurable paths for the application
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
-    dist: "../public"
+    dist: '../public'
   };
 
   // Define the configuration for all the tasks
@@ -69,7 +69,7 @@ module.exports = function (grunt) {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 12345
+        livereload: 35729
       },
       livereload: {
         options: {
@@ -190,7 +190,8 @@ module.exports = function (grunt) {
         httpFontsPath: '/styles/fonts',
         relativeAssets: false,
         assetCacheBuster: false,
-        raw: 'Sass::Script::Number.precision = 10\n'
+        raw: 'Sass::Script::Number.precision = 10\n',
+        require: ['susy', 'breakpoint']
       },
       dist: {
         options: {

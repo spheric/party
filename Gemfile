@@ -5,21 +5,20 @@ gem 'rails', '4.1.4'
 gem 'pg'
 
 gem 'devise'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'angularjs-rails'
 
 # Styling Gems
-gem 'bitters'
-gem 'bourbon'
-gem 'sass-rails', :github => "rails/sass-rails"
-gem 'compass-rails'
-gem 'breakpoint', '~> 2.4.2'
+#gem 'angularjs-rails'
+#gem 'uglifier', '>= 1.3.0'
+#gem 'coffee-rails', '~> 4.0.0'
+#gem 'jquery-rails'
+#gem 'bitters'
+#gem 'sass-rails', :github => "rails/sass-rails"
+#gem 'compass-rails'
+gem 'compass', '~> 1.0.0.rc.1'
+gem 'breakpoint'
 gem 'susy'
-gem 'font-awesome-rails'
 
 group :production do
   gem 'rails_12factor'

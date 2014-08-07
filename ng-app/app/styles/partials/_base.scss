@@ -1,12 +1,10 @@
 // Mixins
-@import "bourbon";
-@import "susy";
-@import "breakpoint";
-@import "font-awesome";
+@import 'breakpoint';
+@import 'susy';
 
 // Typography
-$sans-serif: $helvetica;
-$serif: $georgia;
+$sans-serif: 'Helvetica';
+$serif: 'Georgia';
 $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 

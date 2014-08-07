@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name partyocracyApp
+ * @name ngAppApp
  * @description
- * # partyocracyApp
+ * # ngAppApp
  *
  * Main module of the application.
  */
 angular
-  .module('partyocracyApp', [
+  .module('ngAppApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

@@ -1,2 +1,2 @@
-Rails: cd ..; rails s
-Grunt: grunt serve
+grunt: grunt --force; grunt serve
+rails: cd ..; rails s
