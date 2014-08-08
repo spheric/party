@@ -1,2 +1,2 @@
-grunt: grunt --force; grunt serve
+grunt: grunt build --force; grunt serve
 rails: cd ..; rails s

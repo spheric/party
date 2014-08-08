@@ -6,7 +6,9 @@ gem 'pg'
 
 gem 'devise'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
+#gem 'jbuilder', '~> 2.0'
+gem 'active_model_serializers'
+gem 'foreman'
 
 # Styling Gems
 #gem 'angularjs-rails'
