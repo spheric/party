@@ -14,5 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/public
+/public/*
+/ng-app/bower_components/
+/ng-app/node_modules/
 npm-debug.log
